@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | Academic</title>
+    <link>https://cconejov.github.io/project/</link>
+      <atom:link href="https://cconejov.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 25 Mar 2020 17:17:04 -0600</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Projects</title>
+      <link>https://cconejov.github.io/project/</link>
+    </image>
+    
+    <item>
+      <title>Survival Analysis: Hard Drive Reliability Sample</title>
+      <link>https://cconejov.github.io/project/surv_analysis_hdd/</link>
+      <pubDate>Wed, 25 Mar 2020 17:17:04 -0600</pubDate>
+      <guid>https://cconejov.github.io/project/surv_analysis_hdd/</guid>
+      <description>&lt;h1 id=&#34;abstract&#34;&gt;Abstract&lt;/h1&gt;
+&lt;p&gt;The branch of statistics that study the expected duration of time for an event to occur is called survival analysis. The number of events can be one or more.  This project reviews nonparametric methods like Kaplan-Meier, Nelson-Aalen, and Cox proportional hazards model. These techniques are applied to the Hard Drive data sets of 
+&lt;a href=&#34;https://www.backblaze.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Backblaze&lt;/a&gt;. This application of survival analysis is called &lt;em&gt;failure-time analysis&lt;/em&gt;.  In this way, the goal is to find the survival probabilities of the hard disks using the data collected by 
+&lt;a href=&#34;https://www.backblaze.com/b2/hard-drive-test-data.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Backblaze&lt;/a&gt; in 2019.  With the raw data, we create new variables for applying survival models. The major package used for this exercise is 
+&lt;a href=&#34;https://cran.r-project.org/web/packages/survival/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;survival&lt;/a&gt;. For the number of files, it also uses 
+&lt;a href=&#34;https://cran.r-project.org/web/packages/data.table/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;data.table&lt;/a&gt; package.&lt;/p&gt;
+&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+&lt;p&gt;The global number of hard disks observed during 2019 was 131 448 observations and the number of hard disks with failure was 2 211.&lt;/p&gt;
+&lt;p&gt;The observations are left truncated and right censored. The distribution of age and study time by fail is:
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://cconejov.github.io/project/surv_analysis_hdd/1_age_fail_hd_hu4bc075f00b4fca245fd9e49d07bc85bd_9339_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://cconejov.github.io/project/surv_analysis_hdd/1_age_fail_hd_hu4bc075f00b4fca245fd9e49d07bc85bd_9339_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1133&#34; height=&#34;534&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;We can perceive how the density of fail increases until reaching the first year of operations. We can also appreciate the few values from the end of the expected life of hard drives.&lt;/p&gt;
+&lt;p&gt;We applied the techniques for measuring the survival probabilities:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Kaplan Meier&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Nelson Aalen&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Both methods gives similar values, as you can see in the following figure:
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://cconejov.github.io/project/surv_analysis_hdd/3_plot_diff_na_ka_hua7f8edb9444b699e6ecb38e927a7ca52_7578_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://cconejov.github.io/project/surv_analysis_hdd/3_plot_diff_na_ka_hua7f8edb9444b699e6ecb38e927a7ca52_7578_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1143&#34; height=&#34;534&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;As a result, the survival probabilities are:
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://cconejov.github.io/project/surv_analysis_hdd/2_plot_na_km_hu1c6c99dfdba3d9b1e0644cbda5a04873_8721_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://cconejov.github.io/project/surv_analysis_hdd/2_plot_na_km_hu1c6c99dfdba3d9b1e0644cbda5a04873_8721_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;942&#34; height=&#34;534&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Therefore, we can conclude that there is more than a 90% probability that a hard disk will reach its estimated useful life of 1825 days.&lt;/p&gt;
+&lt;p&gt;On the other hand, using the package 
+&lt;a href=&#34;https://cran.r-project.org/web/packages/simPH/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;simPH&lt;/a&gt;, we can build a simulation of the relative hazard based on a comparison with a median age of 497 in hard disk using Cox regression.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://cconejov.github.io/project/surv_analysis_hdd/4_simPH_Age_hud2edf2bc051166bee8afe1f056eea6e8_14278_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://cconejov.github.io/project/surv_analysis_hdd/4_simPH_Age_hud2edf2bc051166bee8afe1f056eea6e8_14278_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1002&#34; height=&#34;534&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;As a result, there are more probabilities to fail during the first 497 days. In conclusion, the simulated relative hazards for ages below the median are more than one. This means that hard disks are more likely to fail at a given point in time than hard disks that have worked for 497 days.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Anomaly Detection in Time Series using R</title>
+      <link>https://cconejov.github.io/project/outlier_detection/</link>
+      <pubDate>Tue, 17 Mar 2020 16:53:01 -0600</pubDate>
+      <guid>https://cconejov.github.io/project/outlier_detection/</guid>
+      <description>&lt;p&gt;Currently, a lot of processes cause information that can be gathered as time series. Predict anomalies in the observations also is crucial for determining changes in business patterns and decision making. Identifying those events in time series is usually complicated, so package like 
+&lt;a href=&#34;https://cran.r-project.org/web/packages/anomalize/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;anomalize&lt;/a&gt; in 
+&lt;a href=&#34;https://cran.r-project.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R&lt;/a&gt; brings effective
+solutions for identifying outliers observations. In this exercise, we use this package for detecting anomalies in the price of 
+&lt;a href=&#34;https://www.tesla.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tesla&lt;/a&gt; shares from January 2019 to March 2020.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Unsupervised Algorithms</title>
+      <link>https://cconejov.github.io/project/unsupervised/</link>
+      <pubDate>Sun, 08 Mar 2020 21:44:22 -0600</pubDate>
+      <guid>https://cconejov.github.io/project/unsupervised/</guid>
+      <description>&lt;p&gt;This project provides some examples of unsupervised algorithms in machine learning. In these techniques, we need to infer the properties of the observations without the help of an output variable or &lt;em&gt;supervisor&lt;/em&gt;. We review two methods: k-means and hierarchical clustering. Then we use
+some data from 
+&lt;a href=&#34;https://www.kaggle.com/arjunbhasin2013/ccdata&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kaggle&lt;/a&gt;  for applying these techniques to produce a customer segmentation. The platform that we use is 
+&lt;a href=&#34;https://cran.r-project.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R&lt;/a&gt;. Because of the number of observations, we are going to use a parallel process for improving the execution times using the 
+&lt;a href=&#34;https://cran.r-project.org/web/packages/snow/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;snow&lt;/a&gt; package.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Supervised Algorithms</title>
+      <link>https://cconejov.github.io/project/internal-project/</link>
+      <pubDate>Sat, 07 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://cconejov.github.io/project/internal-project/</guid>
+      <description>&lt;h2 id=&#34;machine-learning-supervised-learning&#34;&gt;Machine learning: Supervised learning.&lt;/h2&gt;
+&lt;p&gt;Currently, lots of people talk about machine learning and its applications. People consider that the success of companies rests in the opportunity of applying ML techniques in your business. In this way, it is important having some knowledge about these techniques and more importantly how to use these techniques.&lt;/p&gt;
+&lt;p&gt;The idea of this project is to show some of the techniques available in machine learning, and we are going to start with one of the big branches: supervised learning methodologies. Supervised learning scenario occurs when &amp;ldquo;a set of variables that might be denoted as inputs have some influence on one or more outputs&amp;rdquo; (Hastie, Tibshirani, and Friedman, 2009). The purpose of supervised learning is to use the inputs to predict the values of the outputs.&lt;/p&gt;
+&lt;p&gt;On the other hand, depending on the characteristic of the output, we have different problems. If the output is a quantitative variable, we have a &lt;strong&gt;regression problem&lt;/strong&gt;. In case that the output is qualitative, we have a &lt;strong&gt;classification problem&lt;/strong&gt;. However, in the case of some qualitative outcomes with two classes, we can use regression techniques into classification problems.&lt;/p&gt;
+&lt;h2 id=&#34;classification&#34;&gt;Classification&lt;/h2&gt;
+&lt;p&gt;The focus of the section is to consider the classification problem, then compare some techniques in one simple exercise and finally to use a cross-validation method for estimating the prediction error. All these steps are made in R program using the following libraries:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(tidyverse)    #ggplot
+library(kknn)         #kknn
+library(e1071)        #svm
+library(rpart)        #tree
+library(randomForest) #RF
+library(ada)          #Boost
+library(caret)        #CV
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Using the 
+&lt;a href=&#34;https://github.com/cconejov/purchased_Bike/tree/master/Data&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;purchasedBikes&lt;/a&gt; file, this table contains 1000 observations of 12 variables. We want to use 11 predictor variables for predict the binary class as output &lt;em&gt;PurchasedBike&lt;/em&gt;. It indicates if a customer bought or not a bicycle.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;purchased_bike &amp;lt;- read.table(&amp;quot;purchasedBikes.csv&amp;quot;,
+                              header = TRUE,
+                              sep = &amp;quot;;&amp;quot;,
+                              dec = &amp;quot;,&amp;quot;,
+                              row.names = 1)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Because the purpose of this exercise is to compare the performance of some techniques, we can see that the outcome variable &lt;em&gt;PurchasedBike&lt;/em&gt; is well balanced (48% of the observations in the data set corresponding to Yes value).&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://cconejov.github.io/project/internal-project/plot1_balanced_outcome_hu51588ff513bceff06fded3a48929ab52_4930_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://cconejov.github.io/project/internal-project/plot1_balanced_outcome_hu51588ff513bceff06fded3a48929ab52_4930_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;589&#34; height=&#34;394&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;ggplot(data = purchased_bike) +
+  geom_bar(aes( x = PurchasedBike, fill = PurchasedBike)) +
+    labs(title = &amp;quot;Distribution Purchased Bike&amp;quot;)  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The goal of this exercise is to compare several classification techniques with this example table. Here, the purpose is to predict Yes value in the PurchasedBike using ten cross-validations with 5 groups with the methods:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Support Vector Machine&lt;/li&gt;
+&lt;li&gt;KNN&lt;/li&gt;
+&lt;li&gt;Bayes&lt;/li&gt;
+&lt;li&gt;Decision tree&lt;/li&gt;
+&lt;li&gt;Random Forest&lt;/li&gt;
+&lt;li&gt;Boosting methods (AdaBoost)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Furthermore, the two metrics that we are going to use for determining how good our model is are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How many &amp;ldquo;yes&amp;rdquo; purchase bike variable the model detects. High values are best.&lt;/li&gt;
+&lt;li&gt;Minimum average global error, calculated as 1 - accuracy, where accuracy is calculated as the number of correct predictions divided by the number of total predictions.  Low values are best.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For determining the number of &amp;ldquo;yes&amp;rdquo; in the &lt;em&gt;PurchasedBike&lt;/em&gt; and the average global error, we do the following code:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;#Number of observation
+n &amp;lt;- dim(purchased_bike)[1]
+
+#SVM
+yes_detect_svm   &amp;lt;- rep(0,10)
+error_detect_svm &amp;lt;- rep(0,10)
+
+#KNN
+yes_detect_knn   &amp;lt;- rep(0,10)
+error_detect_knn &amp;lt;- rep(0,10)
+
+#Bayes
+yes_detect_bayes   &amp;lt;- rep(0,10)
+error_detect_bayes &amp;lt;- rep(0,10)
+
+#trees
+yes_detect_tree   &amp;lt;- rep(0,10)
+error_detect_tree &amp;lt;- rep(0,10)
+
+#RFs
+yes_detect_RF   &amp;lt;- rep(0,10)
+error_detect_RF &amp;lt;- rep(0,10)
+
+#boosting
+yes_detect_boosting   &amp;lt;- rep(0,10)
+error_detect_boosting &amp;lt;- rep(0,10)
+
+# cross validation 10 times
+for(i in 1:10) {  #10
+  groups &amp;lt;- createFolds(1:n,5) #5 groups
+
+  #SVM
+  yes_svm   &amp;lt;- 0
+  error_svm &amp;lt;- 0
+
+  #KNN
+  yes_knn   &amp;lt;- 0
+  error_knn &amp;lt;- 0
+
+  #Bayes
+  yes_bayes   &amp;lt;- 0
+  error_bayes &amp;lt;- 0
+
+  #trees
+  yes_tree   &amp;lt;- 0
+  error_tree &amp;lt;- 0
+
+  #RFs
+  yes_RF   &amp;lt;- 0
+  error_RF &amp;lt;- 0
+
+  #boosting
+  yes_boosting   &amp;lt;- 0
+  error_boosting &amp;lt;- 0
+
+  # This for does &amp;quot;cross-validation&amp;quot;  with 5 groups (Folds)
+  for(k in 1:5) {   #5
+
+    training  &amp;lt;- groups[[k]]              #list
+    ttesting  &amp;lt;- purchased_bike[training,]
+    tlearning &amp;lt;- purchased_bike[-training,]
+
+    #SVM
+    model      &amp;lt;- svm(PurchasedBike~., data = tlearning, kernel =&amp;quot;radial&amp;quot;)
+    prediction &amp;lt;- predict(model, ttesting)
+    Actual     &amp;lt;- ttesting[, 12]
+    MC         &amp;lt;- table(Actual, prediction)
+
+    # &amp;quot;Yes&amp;quot; purchase detection
+    yes_svm &amp;lt;- yes_svm + MC[2,2]
+    # Error detection
+    error_svm &amp;lt;- error_svm + (1 - (sum(diag(MC)))/sum(MC))*100
+
+    #KNN
+    model      &amp;lt;- train.kknn(PurchasedBike~., data = tlearning, kmax = 7)
+    prediction &amp;lt;- predict(model,ttesting[, -12])
+    Actual     &amp;lt;- ttesting[, 12]
+    MC         &amp;lt;- table(Actual, prediction)
+
+    # &amp;quot;Yes&amp;quot; purchase detection
+    yes_knn &amp;lt;- yes_knn + MC[2,2]
+    # Error detection
+    error_knn &amp;lt;- error_knn + (1 - (sum(diag(MC)))/sum(MC))*100
+
+    #Bayes
+    model      &amp;lt;- naiveBayes(PurchasedBike~., data = tlearning)
+    prediction &amp;lt;- predict(model, ttesting[,-12])
+    Actual     &amp;lt;- ttesting[,12]
+    MC         &amp;lt;- table(Actual, prediction)
+
+    # &amp;quot;Yes&amp;quot; purchase detection
+    yes_bayes &amp;lt;- yes_bayes + MC[2,2]
+    # Error detection
+    error_bayes &amp;lt;- error_bayes + (1 - (sum(diag(MC)))/sum(MC))*100
+
+    #trees
+    model      &amp;lt;- rpart(PurchasedBike~. ,data = tlearning)
+    prediction &amp;lt;- predict(model, ttesting, type=&#39;class&#39;)
+    Actual     &amp;lt;- ttesting[, 12]
+    MC         &amp;lt;- table(Actual, prediction)
+
+    # &amp;quot;Yes&amp;quot; purchase detection
+    yes_tree &amp;lt;- yes_tree + MC[2,2]
+    # Error detection
+    error_tree &amp;lt;- error_tree + (1 - (sum(diag(MC)))/sum(MC))*100
+
+    #RFs
+    model      &amp;lt;- randomForest(PurchasedBike~., data = tlearning, importance=TRUE)
+    prediction &amp;lt;- predict(model, ttesting[, -12])
+    Actual     &amp;lt;- ttesting[, 12]
+    MC         &amp;lt;- table(Actual, prediction)
+
+    # &amp;quot;Yes&amp;quot; purchase detection
+    yes_RF &amp;lt;- yes_RF + MC[2,2]
+    # Error detection
+    error_RF &amp;lt;- error_RF + (1 - (sum(diag(MC)))/sum(MC))*100
+
+    #boosting
+    model      &amp;lt;- ada(PurchasedBike~., data = tlearning, iter=20, nu = 1, type = &amp;quot;discrete&amp;quot;)
+    prediction &amp;lt;- predict(model, ttesting[, -12])
+    Actual     &amp;lt;- ttesting[, 12]
+    MC         &amp;lt;- table(Actual, prediction)
+
+    # &amp;quot;Yes&amp;quot; purchase detection
+    yes_boosting &amp;lt;- yes_boosting + MC[2,2]
+    # Error detection
+    error_boosting &amp;lt;- error_boosting + (1-(sum(diag(MC)))/sum(MC))*100
+
+  }
+
+  #SVM  
+  yes_detect_svm[i]   &amp;lt;- yes_svm
+  error_detect_svm[i] &amp;lt;- error_svm/5
+
+  #KNN
+  yes_detect_knn[i]   &amp;lt;- yes_knn
+  error_detect_knn[i] &amp;lt;- error_knn/5
+
+  #Bayes
+  yes_detect_bayes[i]   &amp;lt;- yes_bayes
+  error_detect_bayes[i] &amp;lt;- error_bayes/5
+
+  #trees
+  yes_detect_tree[i]   &amp;lt;- yes_tree
+  error_detect_tree[i] &amp;lt;- error_tree/5
+
+  #RF
+  yes_detect_RF[i]   &amp;lt;- yes_RF
+  error_detect_RF[i] &amp;lt;- error_RF/5
+
+  #boosting
+  yes_detect_boosting[i]   &amp;lt;- yes_boosting
+  error_detect_boosting[i] &amp;lt;- error_boosting/5
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finally, we create three auxiliary tables for showing the results:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;
+colors &amp;lt;- c(&amp;quot;SVM&amp;quot;      = &amp;quot;blue&amp;quot;,
+            &amp;quot;KNN&amp;quot;      = &amp;quot;red&amp;quot;,
+            &amp;quot;Bayes&amp;quot;    =  &amp;quot;orange&amp;quot;,
+            &amp;quot;Tree&amp;quot;     = &amp;quot;purple&amp;quot;,
+            &amp;quot;RF&amp;quot;       = &amp;quot;black&amp;quot;,
+            &amp;quot;Boost&amp;quot; = &amp;quot;green&amp;quot;
+)
+
+detect &amp;lt;- tibble(Iteration = seq(1,10),
+                 SVM = yes_detect_svm,
+                 KNN = yes_detect_knn,
+                 Bayes = yes_detect_bayes,
+                 Tree = yes_detect_tree,
+                 RF   = yes_detect_RF,
+                 Boost = yes_detect_boosting)
+
+global_error &amp;lt;- tibble(Iteration = seq(1,10),
+                 SVM = error_detect_svm,
+                 KNN = error_detect_knn,
+                 Bayes = error_detect_bayes,
+                 Tree = error_detect_tree,
+                 RF   = error_detect_RF,
+                 Boost = error_detect_boosting)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The plot with the yes value detection shows us that the method random forest has on average the best capacity for detecting the positive cases of bikes purchased.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;ggplot(data = detect, aes(x = Iteration) ) +
+  geom_line(aes( y = SVM, color = &amp;quot;SVM&amp;quot;) ) +
+  geom_line(aes( y = KNN, color = &amp;quot;KNN&amp;quot;)) +
+  geom_line(aes( y = Bayes, color = &amp;quot;Bayes&amp;quot;)) +
+  geom_line(aes( y = Tree, color = &amp;quot;Tree&amp;quot;)) +
+  geom_line(aes( y = RF, color = &amp;quot;RF&amp;quot;), size = 1) +
+  geom_line(aes( y = Boost, color = &amp;quot;Boost&amp;quot;)) +
+  scale_x_continuous(breaks=c(1:10), labels=c(1:10),limits=c(1,10)) +
+  labs(x = &amp;quot;Iteration&amp;quot;,
+       y = &amp;quot;Yes detection&amp;quot;,
+       color = &amp;quot;Method&amp;quot;,
+       title = &amp;quot;Quantity of Purchased bike variable&amp;quot;
+       ) +
+  scale_color_manual(values = colors)
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://cconejov.github.io/project/internal-project/plot2_quantity_yes_hu16278502f501e3e1ea278e77af2d1e1e_11260_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://cconejov.github.io/project/internal-project/plot2_quantity_yes_hu16278502f501e3e1ea278e77af2d1e1e_11260_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;589&#34; height=&#34;394&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Besides, Random forest also has the lest average global error, so this method also classifies very well the negative case of bike did not purchase.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;ggplot(data = global_error, aes(x = Iteration) ) +
+  geom_line(aes( y = SVM, color = &amp;quot;SVM&amp;quot;) ) +
+  geom_line(aes( y = KNN, color = &amp;quot;KNN&amp;quot;)) +
+  geom_line(aes( y = Bayes, color = &amp;quot;Bayes&amp;quot;)) +
+  geom_line(aes( y = Tree, color = &amp;quot;Tree&amp;quot;)) +
+  geom_line(aes( y = RF, color = &amp;quot;RF&amp;quot;), size = 1) +
+  geom_line(aes( y = Boost, color = &amp;quot;Boost&amp;quot;)) +
+  scale_x_continuous(breaks=c(1:10), labels=c(1:10),limits=c(1,10)) +
+  labs(x = &amp;quot;Iteration&amp;quot;,
+       y = &amp;quot;AVG global Error&amp;quot;,
+       color = &amp;quot;Method&amp;quot;,
+       title = &amp;quot;Average global error by iteration&amp;quot;
+  ) +
+  scale_color_manual(values = colors)
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://cconejov.github.io/project/internal-project/plot3_avg_error_hud6d6fc1e43b51dc021e78a59eaf17e5a_11160_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://cconejov.github.io/project/internal-project/plot3_avg_error_hud6d6fc1e43b51dc021e78a59eaf17e5a_11160_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;589&#34; height=&#34;394&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;p&gt;Hastie T., Tibshirani R., Friedman J. 2008. The elements of Statistical Learning. Springer.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

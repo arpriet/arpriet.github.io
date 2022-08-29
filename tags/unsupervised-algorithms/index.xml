@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unsupervised Algorithms | Academic</title>
+    <link>https://cconejov.github.io/tags/unsupervised-algorithms/</link>
+      <atom:link href="https://cconejov.github.io/tags/unsupervised-algorithms/index.xml" rel="self" type="application/rss+xml" />
+    <description>Unsupervised Algorithms</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 17 Mar 2020 16:53:01 -0600</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Unsupervised Algorithms</title>
+      <link>https://cconejov.github.io/tags/unsupervised-algorithms/</link>
+    </image>
+    
+    <item>
+      <title>Anomaly Detection in Time Series using R</title>
+      <link>https://cconejov.github.io/project/outlier_detection/</link>
+      <pubDate>Tue, 17 Mar 2020 16:53:01 -0600</pubDate>
+      <guid>https://cconejov.github.io/project/outlier_detection/</guid>
+      <description>&lt;p&gt;Currently, a lot of processes cause information that can be gathered as time series. Predict anomalies in the observations also is crucial for determining changes in business patterns and decision making. Identifying those events in time series is usually complicated, so package like 
+&lt;a href=&#34;https://cran.r-project.org/web/packages/anomalize/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;anomalize&lt;/a&gt; in 
+&lt;a href=&#34;https://cran.r-project.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R&lt;/a&gt; brings effective
+solutions for identifying outliers observations. In this exercise, we use this package for detecting anomalies in the price of 
+&lt;a href=&#34;https://www.tesla.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tesla&lt;/a&gt; shares from January 2019 to March 2020.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Unsupervised Algorithms</title>
+      <link>https://cconejov.github.io/project/unsupervised/</link>
+      <pubDate>Sun, 08 Mar 2020 21:44:22 -0600</pubDate>
+      <guid>https://cconejov.github.io/project/unsupervised/</guid>
+      <description>&lt;p&gt;This project provides some examples of unsupervised algorithms in machine learning. In these techniques, we need to infer the properties of the observations without the help of an output variable or &lt;em&gt;supervisor&lt;/em&gt;. We review two methods: k-means and hierarchical clustering. Then we use
+some data from 
+&lt;a href=&#34;https://www.kaggle.com/arjunbhasin2013/ccdata&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kaggle&lt;/a&gt;  for applying these techniques to produce a customer segmentation. The platform that we use is 
+&lt;a href=&#34;https://cran.r-project.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R&lt;/a&gt;. Because of the number of observations, we are going to use a parallel process for improving the execution times using the 
+&lt;a href=&#34;https://cran.r-project.org/web/packages/snow/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;snow&lt;/a&gt; package.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

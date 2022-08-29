@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nonparametric Modeling | Academic</title>
+    <link>https://cconejov.github.io/tags/nonparametric-modeling/</link>
+      <atom:link href="https://cconejov.github.io/tags/nonparametric-modeling/index.xml" rel="self" type="application/rss+xml" />
+    <description>Nonparametric Modeling</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 25 Mar 2020 17:17:04 -0600</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Nonparametric Modeling</title>
+      <link>https://cconejov.github.io/tags/nonparametric-modeling/</link>
+    </image>
+    
+    <item>
+      <title>Survival Analysis: Hard Drive Reliability Sample</title>
+      <link>https://cconejov.github.io/project/surv_analysis_hdd/</link>
+      <pubDate>Wed, 25 Mar 2020 17:17:04 -0600</pubDate>
+      <guid>https://cconejov.github.io/project/surv_analysis_hdd/</guid>
+      <description>&lt;h1 id=&#34;abstract&#34;&gt;Abstract&lt;/h1&gt;
+&lt;p&gt;The branch of statistics that study the expected duration of time for an event to occur is called survival analysis. The number of events can be one or more.  This project reviews nonparametric methods like Kaplan-Meier, Nelson-Aalen, and Cox proportional hazards model. These techniques are applied to the Hard Drive data sets of 
+&lt;a href=&#34;https://www.backblaze.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Backblaze&lt;/a&gt;. This application of survival analysis is called &lt;em&gt;failure-time analysis&lt;/em&gt;.  In this way, the goal is to find the survival probabilities of the hard disks using the data collected by 
+&lt;a href=&#34;https://www.backblaze.com/b2/hard-drive-test-data.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Backblaze&lt;/a&gt; in 2019.  With the raw data, we create new variables for applying survival models. The major package used for this exercise is 
+&lt;a href=&#34;https://cran.r-project.org/web/packages/survival/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;survival&lt;/a&gt;. For the number of files, it also uses 
+&lt;a href=&#34;https://cran.r-project.org/web/packages/data.table/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;data.table&lt;/a&gt; package.&lt;/p&gt;
+&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+&lt;p&gt;The global number of hard disks observed during 2019 was 131 448 observations and the number of hard disks with failure was 2 211.&lt;/p&gt;
+&lt;p&gt;The observations are left truncated and right censored. The distribution of age and study time by fail is:
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://cconejov.github.io/project/surv_analysis_hdd/1_age_fail_hd_hu4bc075f00b4fca245fd9e49d07bc85bd_9339_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://cconejov.github.io/project/surv_analysis_hdd/1_age_fail_hd_hu4bc075f00b4fca245fd9e49d07bc85bd_9339_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1133&#34; height=&#34;534&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;We can perceive how the density of fail increases until reaching the first year of operations. We can also appreciate the few values from the end of the expected life of hard drives.&lt;/p&gt;
+&lt;p&gt;We applied the techniques for measuring the survival probabilities:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Kaplan Meier&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Nelson Aalen&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Both methods gives similar values, as you can see in the following figure:
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://cconejov.github.io/project/surv_analysis_hdd/3_plot_diff_na_ka_hua7f8edb9444b699e6ecb38e927a7ca52_7578_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://cconejov.github.io/project/surv_analysis_hdd/3_plot_diff_na_ka_hua7f8edb9444b699e6ecb38e927a7ca52_7578_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1143&#34; height=&#34;534&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;As a result, the survival probabilities are:
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://cconejov.github.io/project/surv_analysis_hdd/2_plot_na_km_hu1c6c99dfdba3d9b1e0644cbda5a04873_8721_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://cconejov.github.io/project/surv_analysis_hdd/2_plot_na_km_hu1c6c99dfdba3d9b1e0644cbda5a04873_8721_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;942&#34; height=&#34;534&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Therefore, we can conclude that there is more than a 90% probability that a hard disk will reach its estimated useful life of 1825 days.&lt;/p&gt;
+&lt;p&gt;On the other hand, using the package 
+&lt;a href=&#34;https://cran.r-project.org/web/packages/simPH/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;simPH&lt;/a&gt;, we can build a simulation of the relative hazard based on a comparison with a median age of 497 in hard disk using Cox regression.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://cconejov.github.io/project/surv_analysis_hdd/4_simPH_Age_hud2edf2bc051166bee8afe1f056eea6e8_14278_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://cconejov.github.io/project/surv_analysis_hdd/4_simPH_Age_hud2edf2bc051166bee8afe1f056eea6e8_14278_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1002&#34; height=&#34;534&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;As a result, there are more probabilities to fail during the first 497 days. In conclusion, the simulated relative hazards for ages below the median are more than one. This means that hard disks are more likely to fail at a given point in time than hard disks that have worked for 497 days.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
