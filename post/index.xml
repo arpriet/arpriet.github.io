@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts | Academic</title>
+    <link>https://cconejov.github.io/post/</link>
+      <atom:link href="https://cconejov.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <description>Posts</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 12 Mar 2020 09:59:22 -0600</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Posts</title>
+      <link>https://cconejov.github.io/post/</link>
+    </image>
+    
+    <item>
+      <title>Skill Set for data scientists</title>
+      <link>https://cconejov.github.io/post/ds_skill_set/</link>
+      <pubDate>Thu, 12 Mar 2020 09:59:22 -0600</pubDate>
+      <guid>https://cconejov.github.io/post/ds_skill_set/</guid>
+      <description>&lt;p&gt;On the Internet, you can find a lot of definitions of data science. My preferred description of this science I founded it in the Harvard Data Science Review (HDSR). Rafael A. Irizarry defines data science as &lt;em&gt;&amp;ldquo;an umbrella term to describe the entire complex and multistep processes used to extract value from data&amp;rdquo;&lt;/em&gt; (Irizarry, 2020). Following this definition, a strong data scientist require to have expertise in the following areas (Diesinger, 2016):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Technical skills.&lt;/li&gt;
+&lt;li&gt;Analytical skills.&lt;/li&gt;
+&lt;li&gt;Business skills.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Usually, technical skill is related to informatics and coding abilities. Irizarry calls this area Backend data science or data engineering. Currently, the most popular framework for data science is R and Python (or a mix of both); although, Julia can have a big role in the future. For example, in this tweet, Viral B. Shah explains that Julia is better in High-performance computing than Python.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure--viral-b-shah-and-elon-musk-tweethttpstwittercomviral_b_shahstatus1224362465779163138s20&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://cconejov.github.io/post/ds_skill_set/Elon_Julia_hue7cf5f66004bf8fb7f7f4dfc7fe1e5fc_70808_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Viral B. Shah and Elon Musk tweet&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://cconejov.github.io/post/ds_skill_set/Elon_Julia_hue7cf5f66004bf8fb7f7f4dfc7fe1e5fc_70808_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;893&#34; height=&#34;411&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    &lt;a href=&#34;https://twitter.com/Viral_B_Shah/status/1224362465779163138?s=20&#34;&gt;&lt;strong&gt;Viral B. Shah and Elon Musk tweet&lt;/strong&gt;&lt;/a&gt;
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Additionally, technical skills include the capacity to manage various computational architectures, such as databases and operating systems but also other skills such as parallel computing and high performance computing.&lt;/p&gt;
+&lt;p&gt;In summary, the abilities of managing, cleansing, consolidating, and modeling data must be a crucial requirement for data scientists. Also, (Diesinger, 2016)  consider that some profiles for data scientists are focused only on this aspect.&lt;/p&gt;
+&lt;p&gt;On the other hand, analytical skills are related more to data analysis. Irizarry denominates this branch Frontend data science. Moreover, this specific area can be divided depending on the tasks within data analysts and machine learning engineers.  Data analysts are involved in the process of modeling, simulation, and causal inference. Machine learning engineers design and develop prediction algorithms that need a large amount of data. Usually, both areas require high performance in advance statistics, math, experiment design, research expertise, and data visualization.&lt;/p&gt;
+&lt;p&gt;Finally, the goal of data science is to provide business problem solving using scientific approaches. The two previous skills focus on the &lt;em&gt;scientific approach&lt;/em&gt;, but data scientists require to have a good perspective of business processes with the purpose of given effective solutions. Also, it is very easy to fall in the false authority fallacy when data scientists use technical terms for expressing their solutions. As a result, &amp;ldquo;it is important for data scientists to communicate effectively
+with business users utilizing business lingua&amp;rdquo; (Diesinger, 2016).&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Irizarry, R. A. (2020). The Role of Academia in Data Science Education. Harvard Data Science Review.
+&lt;a href=&#34;https://hdsr.mitpress.mit.edu/pub/gg6swfqh&#34;&gt;https://hdsr.mitpress.mit.edu/pub/gg6swfqh&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Diesinger, P. M. (2016). Data Scientist skill Set.
+&lt;a href=&#34;https://d4t4science.com/2016/11/06/data-scientist-skill-set/&#34;&gt;https://d4t4science.com/2016/11/06/data-scientist-skill-set/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
